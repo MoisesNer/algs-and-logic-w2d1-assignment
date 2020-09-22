@@ -2,10 +2,16 @@
 // integers and strings and return a new array without the strings.
 
 const filterArray = function(arr) {
-
+	var result = [];
+    for (let i = 0; i < arr.length; i++) {
+		if(Number.isInteger(arr[i]))
+			result.push(arr[i]);
+    }
+    console.log(result);
 }
 
-//filterArray([1, 2, "a", "b"]) 
+
+filterArray([1, 2, "a", "b"]) 
 // ➞ [1, 2]
 
 //filterArray([1, "a", "b", 0, 15]) 
